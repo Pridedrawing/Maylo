@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "music": "Musik",
+    "about": "Über"
+  },
+  "home": {
+    "hero": {
+      "officialWebsite": "Offizielle Website · Neue Veröffentlichung",
+      "tagline": "Filmische Lieder über zerbrechliche Momente.",
+      "subtitle": "Ein Gedenkalbum für Maylo, getragen von",
+      "listenCTA": "Höre \"Just One More Day\"",
+      "exploreAllSongs": "Alle Songs entdecken",
+      "readTheStory": "Die Geschichte lesen",
+      "listenOn": "Höre auf deiner Lieblingsplattform:",
+      "donation": "100% aller Bandcamp- und Physischen Verkäufe gehen an Maylos Rettungsorganisation.",
+      "latestRelease": "Neueste Veröffentlichung",
+      "nowPreviewing": "Jetzt anhören",
+      "videoBlocked": "Videoinhalte erfordern Zustimmung",
+      "videoBlockedDesc": "Dieses Video wird von YouTube gehostet und erfordert Media-Cookies. Bitte passe deine Cookie-Einstellungen an, um es anzusehen."
+    },
+    "donation": {
+      "title": "Hilf Hunden wie Maylo",
+      "description": "Diese Gedenkveröffentlichung ist Maylo gewidmet, einem Rettungshund, dessen Leben durch eine unglaubliche Organisation gerettet wurde. Jeder Kauf über Bandcamp und physische Verkäufe gehen direkt an die Rettungsorganisation, die ihm ein liebevolles Zuhause gab.",
+      "supportThroughMusic": "Unterstützung durch Musik",
+      "supportThroughMusicDesc": "100% aller Bandcamp- und physischen Verkaufsspenden",
+      "supportOnBandcamp": "Auf Bandcamp unterstützen",
+      "supportDirectly": "Direkt unterstützen",
+      "supportDirectlyDesc": "Spende direkt an Mixfelle Dobermann Nothilfe, die Organisation, die Maylo gerettet hat",
+      "visitOrganization": "Organisation besuchen →"
+    },
+    "story": {
+      "title": "Die Geschichte hinter der Veröffentlichung",
+      "description": "Nutze diesen Raum, um die Geschichte von Maylo zu erzählen, die Diagnose, die letzten Tage und wie diese Songs entstanden sind. Halte es persönlich und geerdet: wie das Schreiben zu einer Möglichkeit wurde, verbunden zu bleiben, und wie jedes Stück einen anderen Moment des Abschieds einfängt."
+    },
+    "allSongs": {
+      "title": "Alle Songs",
+      "description": "Jedes Cover markiert einen anderen Schritt durch Trauer, Erinnerung und Akzeptanz. Klicke, um zur Track-Seite zu springen."
+    },
+    "trackJourney": {
+      "title": "Track-Reise",
+      "viewFullTrackList": "Vollständige Trackliste anzeigen",
+      "track": "Track",
+      "listenNow": "Jetzt anhören"
+    }
+  },
+  "track": {
+    "backToMusic": "← Zurück zur Musik",
+    "fromAlbum": "Vom Album:",
+    "lyrics": "Lyrics",
+    "songsInJourney": "Songs auf dieser Reise",
+    "songsInJourneyDesc": "Jedes Cover markiert einen anderen Schritt durch Trauer, Erinnerung und Akzeptanz. Klicke, um zur Track-Seite zu springen.",
+    "trackOf": "Track {current} von {total}",
+    "previous": "Vorheriger Track",
+    "next": "Nächster Track",
+    "play": "Abspielen",
+    "pause": "Pause"
+  },
+  "music": {
+    "title": "Musik",
+    "allTracks": "Alle Tracks"
+  },
+  "music": {
+    "title": "Musik",
+    "singles": "Singles",
+    "allTracks": "Alle Tracks"
+  },
+  "about": {
+    "title": "Über"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "followOn": "Folge uns auf Social Media",
+    "cookieSettings": "Cookie-Einstellungen"
+  },
+  "cookies": {
+    "banner": {
+      "title": "Wir verwenden Cookies",
+      "description": "Diese Website verwendet Cookies von YouTube für Video-Einbettungen. Du kannst wählen, welche Cookies du akzeptieren möchtest.",
+      "essentialOnly": "Nur Notwendige",
+      "settings": "Cookie-Einstellungen",
+      "acceptAll": "Alle Akzeptieren"
+    },
+    "settings": {
+      "title": "Cookie-Einstellungen",
+      "description": "Verwalte deine Cookie-Einstellungen. Du kannst diese Einstellungen jederzeit über den Footer ändern.",
+      "alwaysActive": "Immer Aktiv",
+      "essential": {
+        "title": "Notwendige Cookies",
+        "description": "Erforderlich für die Funktion der Website. Diese können nicht deaktiviert werden."
+      },
+      "media": {
+        "title": "Medien & Inhalts-Cookies",
+        "description": "Werden verwendet, um eingebettete YouTube-Videos anzuzeigen. Werden von YouTube/Google gesetzt, wenn du ein Video abspielst."
+      },
+      "cancel": "Abbrechen",
+      "savePreferences": "Einstellungen Speichern"
+    }
+  },
+  "languageDetection": {
+    "title": "Zu Deutsch wechseln?",
+    "description": "Wir haben bemerkt, dass dein Browser auf Deutsch eingestellt ist. Möchtest du diese Seite auf Deutsch anzeigen?",
+    "stayEnglish": "Bei Englisch bleiben",
+    "switchGerman": "Zu Deutsch wechseln"
+  }
+}

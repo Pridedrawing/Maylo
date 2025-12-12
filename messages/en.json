@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "home": "Home",
+    "music": "Music",
+    "about": "About"
+  },
+  "home": {
+    "hero": {
+      "officialWebsite": "Official Website · New Release",
+      "tagline": "Cinematic songs about fragile moments.",
+      "subtitle": "A memorial release for Maylo, carried by",
+      "listenCTA": "Listen to \"Just One More Day\"",
+      "exploreAllSongs": "Explore all songs",
+      "readTheStory": "Read the story",
+      "listenOn": "Listen on your favourite platform:",
+      "donation": "100% of Bandcamp and physical sales go to Maylo's rescue organization.",
+      "latestRelease": "Latest release",
+      "nowPreviewing": "Now previewing",
+      "videoBlocked": "Video content requires consent",
+      "videoBlockedDesc": "This video is hosted by YouTube and requires media cookies. Please adjust your cookie settings to watch."
+    },
+    "donation": {
+      "title": "Help dogs like Maylo",
+      "description": "This memorial release is dedicated to Maylo, a rescue dog whose life was saved by an incredible organization. Every purchase through Bandcamp and physical sales go directly to the rescue organization that gave him a loving home.",
+      "supportThroughMusic": "Support through music",
+      "supportThroughMusicDesc": "100% of all Bandcamp and physical sales donations",
+      "supportOnBandcamp": "Support on Bandcamp",
+      "supportDirectly": "Support directly",
+      "supportDirectlyDesc": "Donate directly to Mixfelle Dobermann Nothilfe, the organization that saved Maylo",
+      "visitOrganization": "Visit organization →"
+    },
+    "story": {
+      "title": "The story behind the release",
+      "description": "Use this space to tell the story of Maylo, the diagnosis, the last days, and how these songs came to life. Keep it personal and grounded: how writing became a way to stay connected, and how each piece captures a different moment of saying goodbye."
+    },
+    "allSongs": {
+      "title": "All Songs",
+      "description": "Each cover marks a different step through grief, memory, and acceptance. Click to jump to the track page."
+    },
+    "trackJourney": {
+      "title": "Track journey",
+      "viewFullTrackList": "View full track list",
+      "track": "Track",
+      "listenNow": "Listen now"
+    }
+  },
+  "track": {
+    "backToMusic": "← Back to music",
+    "fromAlbum": "From album:",
+    "lyrics": "Lyrics",
+    "songsInJourney": "Songs in this journey",
+    "songsInJourneyDesc": "Each cover marks a different step through grief, memory, and acceptance. Click to jump to the track page.",
+    "trackOf": "Track {current} of {total}",
+    "previous": "Previous track",
+    "next": "Next track",
+    "play": "Play",
+    "pause": "Pause"
+  },
+  "music": {
+    "title": "Music",
+    "singles": "Singles",
+    "allTracks": "All tracks"
+  },
+  "about": {
+    "title": "About"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "followOn": "Follow on social media",
+    "cookieSettings": "Cookie Settings"
+  },
+  "cookies": {
+    "banner": {
+      "title": "We use cookies",
+      "description": "This website uses cookies from YouTube for video embeds. You can choose which cookies to accept.",
+      "essentialOnly": "Essential Only",
+      "settings": "Cookie Settings",
+      "acceptAll": "Accept All"
+    },
+    "settings": {
+      "title": "Cookie Settings",
+      "description": "Manage your cookie preferences. You can change these settings at any time from the footer.",
+      "alwaysActive": "Always Active",
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "Required for the website to function. These cannot be disabled."
+      },
+      "media": {
+        "title": "Media & Content Cookies",
+        "description": "Used to display embedded YouTube videos. Set by YouTube/Google when you play a video."
+      },
+      "cancel": "Cancel",
+      "savePreferences": "Save Preferences"
+    }
+  },
+  "languageDetection": {
+    "title": "Switch to German?",
+    "description": "We noticed your browser is set to German. Would you like to view this site in German?",
+    "stayEnglish": "Stay in English",
+    "switchGerman": "Zu Deutsch wechseln"
+  }
+}
