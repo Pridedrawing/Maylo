@@ -51,12 +51,11 @@ export default function HomePage() {
               {t('hero.officialWebsite')}
             </p>
             <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
-              {aboutContent.displayName}
+              {t('hero.title')}
             </h1>
             <p className="text-sm text-neutral-200">
-              {aboutContent.tagline}{" "}
-              {t('hero.subtitle')}{" "}
-              <span className="font-medium italic">{albumTitle}</span>.
+              {t('hero.tagline')}{" "}
+              {t('hero.subtitle')}
             </p>
 
             <div className="flex flex-wrap gap-3 text-sm">
@@ -81,18 +80,10 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-4 text-xs text-neutral-300">
-              <p className="mb-2">{t('hero.listenOn')}</p>
+            <div className="mt-10">
+              <h2 className="mb-4 text-sm font-semibold tracking-tight">{t('hero.listenOn')}</h2>
               <StreamingLinks links={siteLinks.streaming} size="sm" />
             </div>
-
-            <Link
-              href="https://mylongrey.bandcamp.com/album/just-one-more-day"
-              target="_blank"
-              className="mt-4 inline-flex items-center rounded-full bg-white/5 px-4 py-2 text-[11px] text-neutral-200 hover:bg-white/10"
-            >
-              {t('hero.donation')}
-            </Link>
           </div>
 
           {/* Right: YouTube video */}
