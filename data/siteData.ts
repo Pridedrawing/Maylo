@@ -206,13 +206,7 @@ export const tracks: Track[] = [
 export const aboutContent: AboutContent = {
   displayName: "Mylon Grey",
   tagline: "Cinematic songs about fragile moments.",
-  biography: [
-    {
-      id: "intro",
-      heading: "Early Days",
-      body: "Write your story here.",
-    },
-  ],
+  biography: [],
 };
 
 /* -----------------------------------------------------------

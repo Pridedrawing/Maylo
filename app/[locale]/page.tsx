@@ -170,24 +170,35 @@ export default function HomePage() {
       {/* STORY SECTION */}
       <section className="mx-auto grid max-w-6xl gap-10 px-4 py-10 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:px-6 md:py-16">
         <article className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
-          <h2 className="text-xl font-semibold tracking-tight">
+          <h2 className="mb-6 text-xl font-semibold tracking-tight">
             {t('story.title')}
           </h2>
-          <p className="text-sm leading-relaxed text-neutral-200">
-            {t('story.description')}
-          </p>
-          {aboutContent.biography.map((block) => (
-            <article key={block.id} className="space-y-2">
-              {block.heading && (
-                <h3 className="text-sm font-semibold tracking-tight">
-                  {block.heading}
-                </h3>
-              )}
-              <p className="text-sm leading-relaxed text-neutral-200 whitespace-pre-line">
-                {block.body}
+          <div className="relative space-y-4">
+            <Image
+              src="/covers/maylo.jpg"
+              alt="Maylo"
+              width={250}
+              height={250}
+              className="float-right ml-4 mb-4 rounded-lg object-cover"
+            />
+            {t('story.description').split('\n\n').map((paragraph, index) => (
+              <p key={index} className="text-sm leading-relaxed text-neutral-200">
+                {paragraph}
               </p>
-            </article>
-          ))}
+            ))}
+            {aboutContent.biography.map((block) => (
+              <article key={block.id} className="space-y-2">
+                {block.heading && (
+                  <h3 className="text-sm font-semibold tracking-tight">
+                    {block.heading}
+                  </h3>
+                )}
+                <p className="text-sm leading-relaxed text-neutral-200 whitespace-pre-line">
+                  {block.body}
+                </p>
+              </article>
+            ))}
+          </div>
         </article>
 
         {/* Track thumbnail navigator */}
