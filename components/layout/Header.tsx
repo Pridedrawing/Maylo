@@ -16,7 +16,7 @@ export function Header() {
     <header className="border-b border-white/5 bg-black/70 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4">
         <Link href={`/${locale}`} className="text-lg font-semibold tracking-wide">
-          Mylon Grey
+          {t('home')}
         </Link>
 
         <nav className="hidden gap-6 text-sm md:flex">

@@ -65,7 +65,120 @@
     "allTracks": "All tracks"
   },
   "about": {
-    "title": "About"
+    "title": "About",
+    "imprint": {
+      "title": "Imprint",
+      "heading": "Information pursuant to § 5 Digital Services Act (DDG)",
+      "name": "Oliver Gaden",
+      "address": "c/o Block Services\nStuttgarter Str. 106\n70736 Fellbach\nGermany",
+      "email": "Email:",
+      "responsible": "Responsible for content according to § 18 Para. 2 MStV:",
+      "responsibleName": "Oliver Gaden",
+      "responsibleAddress": "Address as above"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "controller": {
+        "title": "1. Data Controller",
+        "description": "Responsible for data processing on this website:",
+        "name": "Oliver Gaden",
+        "address": "c/o Block Services\nStuttgarter Str. 106\n70736 Fellbach\nGermany",
+        "email": "Email:"
+      },
+      "general": {
+        "title": "2. General Information",
+        "description": "The protection of your personal data is important to me. Personal data is processed on this website only to the necessary extent and in accordance with the General Data Protection Regulation (GDPR) and the Telecommunications and Telemedia Data Protection Act (TTDSG)."
+      },
+      "serverLogs": {
+        "title": "3. Access Data / Server Log Files",
+        "description": "When you visit this website, the hosting provider automatically collects data in so-called server log files, including:",
+        "items": [
+          "IP address",
+          "Date and time of request",
+          "Pages/files accessed",
+          "Browser type and operating system"
+        ],
+        "purpose": "This data serves the technical provision, stability and security of the website.",
+        "legalBasis": "Legal basis: Art. 6 Para. 1 lit. f GDPR"
+      },
+      "cookies": {
+        "title": "4. Cookies & Consent Management",
+        "description": "This website uses cookies and similar technologies.",
+        "essential": "Technically necessary cookies are set without consent.",
+        "analytics": "Analysis, statistics and third-party cookies (e.g. analytics, embedded media) are only set after explicit consent.",
+        "consent": "Consent is given via a cookie consent banner and can be revoked at any time.",
+        "legalBasis": "Legal basis:\nArt. 6 Para. 1 lit. a GDPR\n§ 25 Para. 1 TTDSG"
+      },
+      "analytics": {
+        "title": "5. Web Analytics",
+        "description": "This website uses a web analytics service to evaluate user behavior (e.g. page views, dwell time).",
+        "dataProcessed": "The following data may be processed:",
+        "items": [
+          "IP address (usually anonymized)",
+          "Device type, browser",
+          "Pages accessed"
+        ],
+        "consent": "Data processing only takes place after consent.",
+        "thirdCountries": "Personal data may be transferred to third countries (e.g. USA). Appropriate safeguards such as EU standard contractual clauses are used.",
+        "legalBasis": "Legal basis: Art. 6 Para. 1 lit. a GDPR"
+      },
+      "googleFonts": {
+        "title": "6. Google Fonts",
+        "description": "This website uses fonts from Google Fonts.",
+        "dataTransfer": "When the page is accessed, a connection to Google LLC servers may be established, whereby your IP address may be transmitted.",
+        "provider": "Provider:\nGoogle Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland",
+        "thirdCountries": "Data transfer to the USA cannot be excluded.",
+        "legalBasis": "Legal basis: Art. 6 Para. 1 lit. a GDPR (Consent)"
+      },
+      "youtube": {
+        "title": "7. YouTube",
+        "description": "This website embeds videos from the YouTube platform.",
+        "provider": "Provider:\nGoogle Ireland Limited, Dublin, Ireland",
+        "dataTransfer": "When playing a video, personal data may be transmitted to Google. YouTube may set cookies and track your usage behavior.",
+        "thirdCountries": "A transfer to the USA is possible.",
+        "legalBasis": "Legal basis: Art. 6 Para. 1 lit. a GDPR"
+      },
+      "spotify": {
+        "title": "8. Spotify / Music Player",
+        "description": "This website integrates music players and content from Spotify.",
+        "provider": "Provider:\nSpotify AB, Regeringsgatan 19, SE-111 53 Stockholm, Sweden",
+        "dataTransfer": "When playing, personal data (e.g. IP address, device information) may be transmitted to Spotify.",
+        "legalBasis": "Legal basis: Art. 6 Para. 1 lit. a GDPR"
+      },
+      "donations": {
+        "title": "9. Donations",
+        "description": "This website offers the possibility to make voluntary donations.",
+        "dataProcessed": "As part of the donation process, personal data (e.g. name, payment data, email address) may be processed. Data processing is carried out exclusively for donation processing.",
+        "paymentProvider": "The specific data processing depends on the payment service provider used. Their privacy policies also apply.",
+        "legalBasis": "Legal basis: Art. 6 Para. 1 lit. b GDPR"
+      },
+      "contact": {
+        "title": "10. Contact",
+        "description": "When contacting us by email, the transmitted data is stored for processing the request.",
+        "legalBasis": "Legal basis:\nArt. 6 Para. 1 lit. b GDPR or Art. 6 Para. 1 lit. f GDPR"
+      },
+      "rights": {
+        "title": "11. Your Rights",
+        "description": "You have the right at any time to:",
+        "items": [
+          "Access (Art. 15 GDPR)",
+          "Rectification (Art. 16 GDPR)",
+          "Erasure (Art. 17 GDPR)",
+          "Restriction of processing (Art. 18 GDPR)",
+          "Data portability (Art. 20 GDPR)",
+          "Withdrawal of consent (Art. 7 Para. 3 GDPR)",
+          "Objection (Art. 21 GDPR)"
+        ]
+      },
+      "complaint": {
+        "title": "12. Right to Complain",
+        "description": "You have the right to lodge a complaint with a data protection supervisory authority."
+      },
+      "updates": {
+        "title": "13. Updates",
+        "description": "Last updated: December 2025\nThis privacy policy will be updated in case of legal or technical changes."
+      }
+    }
   },
   "footer": {
     "rights": "All rights reserved.",
