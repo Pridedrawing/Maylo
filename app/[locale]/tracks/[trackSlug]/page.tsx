@@ -9,6 +9,7 @@ import Link from "next/link";
 
 import { tracks, albums } from "@/data/siteData";
 import { StreamingLinks } from "@/components/common/StreamingLinks";
+import { GiscusComments } from "@/components/common/GiscusComments";
 import { useArtworkPalette } from "@/components/theme/useArtworkPalette";
 import { getLocalizedString } from "@/lib/i18n-helpers";
 
@@ -239,7 +240,7 @@ export default function TrackPage() {
 
             {/* Description */}
             {trackDescription && (
-              <p className="pl-5 text-sm text-neutral-300">{trackDescription}</p>
+              <p className="pl-5 text-lg leading-relaxed text-neutral-200 font-lora">{trackDescription}</p>
             )}
 
             {/* Lyrics */}
@@ -288,6 +289,9 @@ export default function TrackPage() {
           </div>
         </section>
       )}
+
+      {/* Comments Section */}
+      <GiscusComments trackSlug={slug} />
     </div>
   );
 }

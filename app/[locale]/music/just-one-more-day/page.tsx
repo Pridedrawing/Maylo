@@ -96,7 +96,7 @@ export default function JustOneMoreDayAlbumPage() {
                       href={`/${locale}/tracks/${track.slug}`}
                       className="mt-2 inline-flex self-end text-[11px] text-neutral-300 underline"
                     >
-                      Read more
+                      {t('readMore')}
                     </Link>
                   </div>
                 </div>

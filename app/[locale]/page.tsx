@@ -124,9 +124,10 @@ export default function HomePage() {
           <h2 className="mb-4 text-2xl font-semibold tracking-tight text-amber-50">
             {t('donation.title')}
           </h2>
-          <p className="mb-6 max-w-2xl text-sm leading-relaxed text-amber-100">
-            {t('donation.description')}
-          </p>
+          <div className="mb-10 space-y-3 text-sm leading-relaxed text-amber-100">
+            <p>{t('donation.description1')}</p>
+            <p>{t('donation.description2')}</p>
+          </div>
           <div className="mb-8 grid gap-4 md:grid-cols-2">
             <div>
               <h3 className="mb-2 text-sm font-semibold text-amber-50">{t('donation.supportThroughMusic')}</h3>
@@ -173,7 +174,7 @@ export default function HomePage() {
               className="float-right ml-4 mb-4 rounded-lg object-cover"
             />
             {t('story.description').split('\n\n').map((paragraph, index) => (
-              <p key={index} className="text-sm leading-relaxed text-neutral-200">
+              <p key={index} className="text-base leading-relaxed text-neutral-200 font-lora">
                 {paragraph}
               </p>
             ))}
@@ -184,7 +185,7 @@ export default function HomePage() {
                     {block.heading}
                   </h3>
                 )}
-                <p className="text-sm leading-relaxed text-neutral-200 whitespace-pre-line">
+                <p className="text-base leading-relaxed text-neutral-200 whitespace-pre-line font-lora">
                   {block.body}
                 </p>
               </article>
@@ -276,14 +277,14 @@ export default function HomePage() {
                     />
                   </div>
                   <div className="flex flex-col justify-between">
-                    <p className="text-sm text-neutral-300 line-clamp-6">
+                    <p className="text-sm text-neutral-300 line-clamp-6 font-lora">
                       {trackDescription || "Add a one-line description here later, describing the moment or memory this song belongs to in Maylo's story."}
                     </p>
                     <Link
                       href={`/${locale}/tracks/${track.slug}`}
                       className="mt-2 inline-flex self-end text-[11px] text-neutral-300 underline"
                     >
-                      Read more
+                      {t('trackJourney.readMore')}
                     </Link>
                   </div>
                 </div>

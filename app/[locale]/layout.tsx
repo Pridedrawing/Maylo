@@ -4,6 +4,8 @@ import {notFound} from 'next/navigation';
 import {locales} from '@/i18n/request';
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import { Lora } from 'next/font/google';
 import "../globals.css";
 import { ThemeProvider } from "@/components/theme/ThemeContext";
 import { CookieProvider } from "@/components/common/CookieContext";
@@ -11,6 +13,12 @@ import { CookieConsent } from "@/components/common/CookieConsent";
 import { LanguageDetection } from "@/components/common/LanguageDetection";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+
+const lora = Lora({
+  subsets: ['latin'],
+  variable: '--font-lora',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Mylon Grey – Official Website",
@@ -48,16 +56,18 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className="text-neutral-50">
+      <body className={`text-neutral-50 ${lora.variable}`}>
         {/* Banner */}
         <div className="w-full" style={{ backgroundColor: "#1E261D" }}>
           <div className="flex justify-center px-4">
             <div className="max-w-6xl w-full">
-              <img
-                src="/covers/just one more day banner.jpg"
-                alt="Just One More Day"
-                className="h-auto w-full"
-              />
+              <Link href={`/${locale}`}>
+                <img
+                  src="/covers/just one more day banner.jpg"
+                  alt="Just One More Day"
+                  className="h-auto w-full cursor-pointer transition-opacity hover:opacity-90"
+                />
+              </Link>
             </div>
           </div>
         </div>

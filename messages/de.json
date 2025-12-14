@@ -22,12 +22,13 @@
     },
     "donation": {
       "title": "Hilf Hunden wie Maylo",
-      "description": "Diese Gedenkveröffentlichung ist Maylo gewidmet, einem Rettungshund, dessen Leben durch eine unglaubliche Organisation gerettet wurde. Jeder Kauf über Bandcamp und physische Verkäufe gehen direkt an die Rettungsorganisation, die ihm ein liebevolles Zuhause gab.",
-      "supportThroughMusic": "Unterstützung durch Musik",
-      "supportThroughMusicDesc": "100% aller Bandcamp- und physischen Verkaufsspenden",
-      "supportOnBandcamp": "Auf Bandcamp unterstützen",
+      "description1": "Maylo durfte erleben, was möglich wird, wenn Menschen nicht wegsehen. Diese Veröffentlichung ist ihm gewidmet – und all jenen Hunden, die noch auf Hilfe warten.",
+      "description2": "Jeder Kauf über Bandcamp sowie alle physischen Verkäufe fließen vollständig an Mixfelle Dobermann Nothilfe, die Organisation, die Maylos Leben gerettet hat.",
+      "supportThroughMusic": "Musik, die hilft",
+      "supportThroughMusicDesc": "Musik hören heißt hier helfen: 100 % der Einnahmen werden gespendet.",
+      "supportOnBandcamp": "Über Bandcamp helfen",
       "supportDirectly": "Direkt unterstützen",
-      "supportDirectlyDesc": "Spende direkt an Mixfelle Dobermann Nothilfe, die Organisation, die Maylo gerettet hat",
+      "supportDirectlyDesc": "Wenn du sofort helfen möchtest, kannst du die Organisation auch direkt unterstützen.",
       "visitOrganization": "Organisation besuchen →"
     },
     "story": {
@@ -42,7 +43,8 @@
       "title": "Track-Reise",
       "viewFullTrackList": "Vollständige Trackliste anzeigen",
       "track": "Track",
-      "listenNow": "Jetzt anhören"
+      "listenNow": "Jetzt anhören",
+      "readMore": "Weiterlesen"
     }
   },
   "track": {

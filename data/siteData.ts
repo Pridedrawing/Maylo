@@ -245,6 +245,7 @@ export const tracks: Track[] = [
 
 export const aboutContent: AboutContent = {
   displayName: "Mylon Grey",
+  tagline: "Singer • Songwriter • Storyteller",
   biography: [],
 };
 

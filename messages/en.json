@@ -21,13 +21,14 @@
       "videoBlockedDesc": "This video is hosted by YouTube and requires media cookies. Please adjust your cookie settings to watch."
     },
     "donation": {
-      "title": "Help dogs like Maylo",
-      "description": "This memorial release is dedicated to Maylo, a rescue dog whose life was saved by an incredible organization. Every purchase through Bandcamp and physical sales go directly to the rescue organization that gave him a loving home.",
-      "supportThroughMusic": "Support through music",
-      "supportThroughMusicDesc": "100% of all Bandcamp and physical sales donations",
-      "supportOnBandcamp": "Support on Bandcamp",
-      "supportDirectly": "Support directly",
-      "supportDirectlyDesc": "Donate directly to Mixfelle Dobermann Nothilfe, the organization that saved Maylo",
+      "title": "Help Dogs Like Maylo",
+      "description1": "Maylo experienced what becomes possible when people don't look away. This release is dedicated to him – and to all the dogs still waiting for help.",
+      "description2": "Every purchase through Bandcamp and all physical sales go entirely to Mixfelle Dobermann Nothilfe, the organization that saved Maylo's life.",
+      "supportThroughMusic": "Music That Helps",
+      "supportThroughMusicDesc": "Listening to music means helping here: 100% of proceeds are donated.",
+      "supportOnBandcamp": "Help via Bandcamp",
+      "supportDirectly": "Support Directly",
+      "supportDirectlyDesc": "If you want to help immediately, you can also support the organization directly.",
       "visitOrganization": "Visit organization →"
     },
     "story": {
@@ -42,7 +43,8 @@
       "title": "Track journey",
       "viewFullTrackList": "View full track list",
       "track": "Track",
-      "listenNow": "Listen now"
+      "listenNow": "Listen now",
+      "readMore": "Read more"
     }
   },
   "track": {
