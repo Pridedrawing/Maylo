@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     siteName: "Mylon Grey",
     images: [
       {
-        url: "/covers/Just_one_more_day.jpg",
+        url: "/covers/just one more day banner.jpg",
         width: 1200,
-        height: 1200,
+        height: 630,
         alt: "Just One More Day - Mylon Grey Album Cover",
       },
     ],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Mylon Grey – In Memory of Maylo",
     description:
       "A memorial album 'Just One More Day' - cinematic songs for fragile moments. All Bandcamp proceeds go to animal welfare.",
-    images: ["/covers/Just_one_more_day.jpg"],
+    images: ["/covers/just one more day banner.jpg"],
   },
 };
 
