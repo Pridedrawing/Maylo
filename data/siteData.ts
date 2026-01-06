@@ -34,7 +34,7 @@ export const albums: Album[] = [
       "you-taught-me-joy",
     ],
     streaming: {
-      spotify: "https://open.spotify.com/album/xyz",
+      spotify: "https://open.spotify.com/album/0CN22tpEFuZHM5X8qFg9BK",
     },
   },
 ];
@@ -263,8 +263,8 @@ export const siteLinks: SiteLinks = {
     },
   ],
   streaming: {
-    spotify: "https://open.spotify.com/artist/xyz",
-    appleMusic: "https://music.apple.com/artist/xyz",
-    amazonMusic: "https://music.amazon.com/artist/xyz",
+    spotify: "https://open.spotify.com/album/0CN22tpEFuZHM5X8qFg9BK",
+    appleMusic: "https://music.apple.com/us/artist/mylon-grey/1857812890",
+    amazonMusic: "https://music.amazon.de/artists/B0G4PV3915/mylon-grey",
   },
 };
