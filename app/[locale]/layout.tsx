@@ -23,12 +23,30 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: "Mylon Grey – Official Website",
   description: "Official website of Mylon Grey – cinematic songs for fragile moments.",
+  metadataBase: new URL("https://mylon-grey.com"),
   openGraph: {
     type: "website",
-    title: "Mylon Grey – Official Website",
+    title: "Mylon Grey – In Memory of Maylo",
     description:
-      "Listen to the music, discover the stories behind the songs, and find Mylon on your favorite platforms.",
-    url: "https://example.com",
+      "A memorial album 'Just One More Day' - cinematic songs for fragile moments. All Bandcamp proceeds go to animal welfare.",
+    url: "https://mylon-grey.com",
+    siteName: "Mylon Grey",
+    images: [
+      {
+        url: "/covers/Just_one_more_day.jpg",
+        width: 1200,
+        height: 1200,
+        alt: "Just One More Day - Mylon Grey Album Cover",
+      },
+    ],
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mylon Grey – In Memory of Maylo",
+    description:
+      "A memorial album 'Just One More Day' - cinematic songs for fragile moments. All Bandcamp proceeds go to animal welfare.",
+    images: ["/covers/Just_one_more_day.jpg"],
   },
 };
 
