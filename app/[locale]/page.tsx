@@ -73,7 +73,9 @@ export default function HomePage() {
                 {t('hero.exploreAllSongs')}
               </Link>
               <Link
-                href={`/${locale}/about`}
+                href="https://mylongrey.bandcamp.com/album/just-one-more-day"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full border border-white/20 px-4 py-2 text-xs"
               >
                 {t('hero.readTheStory')}
