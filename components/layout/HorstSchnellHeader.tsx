@@ -45,6 +45,12 @@ export function HorstSchnellHeader() {
           >
             {t("about")}
           </Link>
+          <Link
+            href={`/${locale}/horst-schnell/impressum`}
+            className="text-amber-200 hover:text-amber-100 transition-colors"
+          >
+            {t("impressum")}
+          </Link>
         </nav>
 
         <div className="hidden md:flex items-center">
@@ -79,6 +85,13 @@ export function HorstSchnellHeader() {
               onClick={() => setOpen(false)}
             >
               {t("about")}
+            </Link>
+            <Link
+              href={`/${locale}/horst-schnell/impressum`}
+              className="text-amber-200"
+              onClick={() => setOpen(false)}
+            >
+              {t("impressum")}
             </Link>
             <Link
               href={`/${locale}`}

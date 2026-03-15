@@ -19,7 +19,7 @@ export function HorstSchnellFooter() {
         <div className="flex items-center gap-4">
           <p>© Dr. Horst Schnell – Lieder eines Lebens</p>
           <Link
-            href={`/${locale}/horst-schnell/about`}
+            href={`/${locale}/horst-schnell/impressum`}
             className="underline hover:text-amber-700 transition-colors"
           >
             Impressum & Datenschutz
