@@ -213,6 +213,75 @@
       "savePreferences": "Einstellungen Speichern"
     }
   },
+  "portal": {
+    "headline": "Zwei Alben. Zwei Geschichten.",
+    "subheadline": "Wähle deine Reise",
+    "maylo": {
+      "label": "Mylon Grey",
+      "title": "Just One More Day",
+      "description": "Ein Gedenkalbum für Maylo — cineastische Lieder über Trauer, Liebe und Erinnerung.",
+      "cta": "Besuchen"
+    },
+    "horstSchnell": {
+      "label": "Dr. Horst Schnell",
+      "title": "Lieder eines Lebens",
+      "description": "20 Lieder, die 90 Jahre eines bemerkenswerten Lebens würdigen.",
+      "cta": "Besuchen"
+    }
+  },
+  "horstSchnell": {
+    "nav": {
+      "home": "Dr. Horst Schnell",
+      "music": "Musik",
+      "about": "Über",
+      "back": "← Zurück"
+    },
+    "home": {
+      "hero": {
+        "label": "Lieder eines Lebens",
+        "title": "Dr. Horst Schnell",
+        "tagline": "20 Lieder, die 90 Jahre eines bemerkenswerten Lebens würdigen — vom Trümmerfeld des Krieges bis zu einem Leben voller Musik, Familie und Weisheit.",
+        "listenCTA": "Jetzt anhören",
+        "exploreAllSongs": "Alle Lieder"
+      },
+      "about": {
+        "title": "Über dieses Album",
+        "description": "\"Lieder eines Lebens\" ist ein musikalisches Portrait über 90 Jahre. Jedes Lied erzählt ein anderes Kapitel: die Entbehrungen des Krieges, der Wiederaufbau, Familienbande und die stille Weisheit eines langen Lebens. Entstanden als Hommage zu seinem 90. Geburtstag."
+      },
+      "allSongs": {
+        "title": "Alle Lieder",
+        "description": "Klicke auf ein Cover, um zur Track-Seite zu gelangen."
+      },
+      "trackJourney": {
+        "title": "Durch das Album",
+        "viewFullTrackList": "Vollständige Trackliste",
+        "track": "Lied",
+        "readMore": "Weiterlesen"
+      }
+    },
+    "music": {
+      "title": "Musik",
+      "bonusTrack": "Bonustrack"
+    },
+    "track": {
+      "backToMusic": "← Zurück zur Musik",
+      "fromAlbum": "Aus dem Album:",
+      "lyrics": "Liedtext",
+      "songsInJourney": "Lieder in diesem Album",
+      "songsInJourneyDesc": "Klicke auf ein Cover, um zum Track zu springen.",
+      "trackOf": "Lied {current} von {total}",
+      "previous": "Vorheriges Lied",
+      "next": "Nächstes Lied",
+      "play": "Abspielen",
+      "pause": "Pause"
+    },
+    "about": {
+      "title": "Über",
+      "description": "Dr. Horst Schnell wurde 1935 geboren und erlebte die gesamte Geschichte des 20. Jahrhunderts — vom Zweiten Weltkrieg als Kind über die Wiederaufbaujahre bis zu einem langen Leben voller Familie, Arbeit und Musik. \"Lieder eines Lebens\" entstand zu seinem 90. Geburtstag als musikalisches Portrait seiner bemerkenswerten Lebensreise.",
+      "albumTitle": "Über das Album",
+      "albumDescription": "20 Lieder, von denen jedes ein Kapitel eines erfüllten Lebens einfängt. Das Album umfasst Kindheitserinnerungen, Kriegserlebnisse, Liebe, Familie, Glaube und die stille Weisheit, die das Alter mit sich bringt. Mit Liebe von seinem Sohn als Hommage geschaffen."
+    }
+  },
   "languageDetection": {
     "title": "Zu Deutsch wechseln?",
     "description": "Wir haben bemerkt, dass dein Browser auf Deutsch eingestellt ist. Möchtest du diese Seite auf Deutsch anzeigen?",

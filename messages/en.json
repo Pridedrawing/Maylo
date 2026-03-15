@@ -209,6 +209,75 @@
       "savePreferences": "Save Preferences"
     }
   },
+  "portal": {
+    "headline": "Two Albums. Two Stories.",
+    "subheadline": "Choose your journey",
+    "maylo": {
+      "label": "Mylon Grey",
+      "title": "Just One More Day",
+      "description": "A memorial album for Maylo — cinematic songs about grief, love, and remembrance.",
+      "cta": "Enter"
+    },
+    "horstSchnell": {
+      "label": "Dr. Horst Schnell",
+      "title": "Lieder eines Lebens",
+      "description": "Songs of a Life — 20 songs celebrating 90 years of a remarkable life.",
+      "cta": "Enter"
+    }
+  },
+  "horstSchnell": {
+    "nav": {
+      "home": "Dr. Horst Schnell",
+      "music": "Music",
+      "about": "About",
+      "back": "← Back"
+    },
+    "home": {
+      "hero": {
+        "label": "Lieder eines Lebens",
+        "title": "Dr. Horst Schnell",
+        "tagline": "20 songs celebrating 90 years of a remarkable life — from the rubble of war to a life full of music, family, and wisdom.",
+        "listenCTA": "Listen now",
+        "exploreAllSongs": "All songs"
+      },
+      "about": {
+        "title": "About this album",
+        "description": "\"Lieder eines Lebens\" — Songs of a Life — is a musical portrait of 90 years. Each song captures a different chapter: the hardships of war, the rebuilding of a nation, family bonds, and the quiet wisdom of a long life. Created as a tribute for his 90th birthday."
+      },
+      "allSongs": {
+        "title": "All Songs",
+        "description": "Click a cover to go to the track page."
+      },
+      "trackJourney": {
+        "title": "Track journey",
+        "viewFullTrackList": "View full track list",
+        "track": "Track",
+        "readMore": "Read more"
+      }
+    },
+    "music": {
+      "title": "Music",
+      "bonusTrack": "Bonus Track"
+    },
+    "track": {
+      "backToMusic": "← Back to music",
+      "fromAlbum": "From album:",
+      "lyrics": "Lyrics",
+      "songsInJourney": "Songs in this album",
+      "songsInJourneyDesc": "Click a cover to jump to that track.",
+      "trackOf": "Track {current} of {total}",
+      "previous": "Previous track",
+      "next": "Next track",
+      "play": "Play",
+      "pause": "Pause"
+    },
+    "about": {
+      "title": "About",
+      "description": "Dr. Horst Schnell was born in 1935 and experienced the full arc of 20th-century German history — from the Second World War as a child, through the rebuilding years, to a long life of family, work, and music. \"Lieder eines Lebens\" was created for his 90th birthday as a musical portrait of his remarkable journey.",
+      "albumTitle": "About the Album",
+      "albumDescription": "20 songs, each capturing a chapter of a life fully lived. The album spans childhood memories, wartime experiences, love, family, faith, and the quiet wisdom that comes with age. Created with love by his son as a tribute."
+    }
+  },
   "languageDetection": {
     "title": "Switch to German?",
     "description": "We noticed your browser is set to German. Would you like to view this site in German?",

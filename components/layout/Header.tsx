@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslations, useLocale } from 'next-intl';
+import { usePathname } from "next/navigation";
 import { siteLinks } from "@/data/siteData";
 import { SocialLinks } from "@/components/common/SocialLinks";
 import { LanguageSwitcher } from "@/components/common/LanguageSwitcher";
@@ -11,6 +12,12 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const t = useTranslations('nav');
   const locale = useLocale();
+  const pathname = usePathname();
+
+  // Hide Maylo header on portal and Horst Schnell section
+  if (pathname === `/${locale}` || pathname.startsWith(`/${locale}/horst-schnell`)) {
+    return null;
+  }
 
   return (
     <header className="border-b border-white/5 bg-black/70 backdrop-blur">
