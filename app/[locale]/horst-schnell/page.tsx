@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { horstSchnellAlbums, horstSchnellTracks } from "@/data/horstSchnellData";
+import { tracks as mayloTracks } from "@/data/siteData";
 import { AudioPlayer } from "@/components/music/AudioPlayer";
 import { useArtworkPalette } from "@/components/theme/useArtworkPalette";
 import { getLocalizedString } from "@/lib/i18n-helpers";
@@ -174,35 +175,65 @@ export default function HorstSchnellPage() {
         </div>
 
         {/* All songs grid */}
-        <aside className="space-y-4 rounded-3xl border border-amber-900/20 bg-black/40 p-4">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-amber-600">
-            {t("allSongs.title")}
-          </h3>
-          <p className="text-xs text-amber-800">
-            {t("allSongs.description")}
-          </p>
-          <div className="mt-3 grid grid-cols-3 gap-3">
-            {albumTracks.map((track) => (
-              <Link
-                key={track.id}
-                href={`/${locale}/horst-schnell/tracks/${track.slug}`}
-                className="group relative aspect-square overflow-hidden rounded-xl border border-amber-900/20"
-              >
-                <Image
-                  src={track.coverImage}
-                  alt={track.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="120px"
-                />
-                <div className="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                <span className="pointer-events-none absolute inset-x-2 bottom-2 line-clamp-2 text-[10px] font-medium text-neutral-50 drop-shadow">
-                  {track.title}
-                </span>
-              </Link>
-            ))}
-          </div>
-        </aside>
+        <div className="space-y-4">
+          <aside className="space-y-4 rounded-3xl border border-amber-900/20 bg-black/40 p-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-amber-600">
+              {t("allSongs.title")}
+            </h3>
+            <p className="text-xs text-amber-800">
+              {t("allSongs.description")}
+            </p>
+            <div className="mt-3 grid grid-cols-3 gap-3">
+              {albumTracks.map((track) => (
+                <Link
+                  key={track.id}
+                  href={`/${locale}/horst-schnell/tracks/${track.slug}`}
+                  className="group relative aspect-square overflow-hidden rounded-xl border border-amber-900/20"
+                >
+                  <Image
+                    src={track.coverImage}
+                    alt={track.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="120px"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <span className="pointer-events-none absolute inset-x-2 bottom-2 line-clamp-2 text-[10px] font-medium text-neutral-50 drop-shadow">
+                    {track.title}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </aside>
+
+          <aside className="space-y-4 rounded-3xl border border-white/10 bg-black/40 p-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-400">
+              Just One More Day
+            </h3>
+            <p className="text-xs text-neutral-600">Mylon Grey</p>
+            <div className="mt-3 grid grid-cols-3 gap-3">
+              {mayloTracks.map((track) => (
+                <Link
+                  key={track.id}
+                  href={`/${locale}/tracks/${track.slug}`}
+                  className="group relative aspect-square overflow-hidden rounded-xl border border-white/10"
+                >
+                  <Image
+                    src={track.coverImage}
+                    alt={track.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="120px"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <span className="pointer-events-none absolute inset-x-2 bottom-2 line-clamp-2 text-[10px] font-medium text-neutral-50 drop-shadow">
+                    {track.title}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </aside>
+        </div>
       </section>
 
       <div className="pb-16" />
