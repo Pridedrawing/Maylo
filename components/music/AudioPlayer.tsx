@@ -11,9 +11,11 @@ const audioRegistry: HTMLAudioElement[] = [];
 
 interface AudioPlayerProps {
   src: string;
+  autoPlay?: boolean;
+  onEnded?: () => void;
 }
 
-export function AudioPlayer({ src }: AudioPlayerProps) {
+export function AudioPlayer({ src, autoPlay, onEnded }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -24,6 +26,10 @@ export function AudioPlayer({ src }: AudioPlayerProps) {
     if (!audio) return;
 
     audioRegistry.push(audio);
+
+    if (autoPlay) {
+      audio.play().catch(() => {});
+    }
 
     const syncState = () => {
       setIsPlaying(!audio.paused && !audio.ended);
@@ -53,6 +59,8 @@ export function AudioPlayer({ src }: AudioPlayerProps) {
       const idx = audioRegistry.indexOf(audio);
       if (idx !== -1 && idx < audioRegistry.length - 1) {
         audioRegistry[idx + 1].play();
+      } else {
+        onEnded?.();
       }
     };
 

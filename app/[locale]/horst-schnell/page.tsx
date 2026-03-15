@@ -1,6 +1,7 @@
 // app/[locale]/horst-schnell/page.tsx
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
@@ -17,6 +18,10 @@ export default function HorstSchnellPage() {
   const locale = useLocale();
   const album = horstSchnellAlbums[0];
   const albumTracks = horstSchnellTracks.filter((tr) => tr.albumId === album.id);
+
+  const [showAll, setShowAll] = useState(false);
+  const [autoPlayNext, setAutoPlayNext] = useState(false);
+  const tracksToShow = showAll ? albumTracks : albumTracks.slice(0, 8);
 
   useArtworkPalette(album.coverImage);
 
@@ -107,8 +112,9 @@ export default function HorstSchnellPage() {
           </div>
 
           <div className="space-y-6">
-            {albumTracks.slice(0, 8).map((track, index) => {
+            {tracksToShow.map((track, index) => {
               const desc = getLocalizedString(track.description || "", locale);
+              const isLastVisible = !showAll && index === 7;
               return (
                 <div key={track.id} className="space-y-4">
                   <article className="grid gap-4 rounded-2xl border border-amber-900/20 bg-amber-950/10 p-5 backdrop-blur-sm md:grid-cols-[minmax(0,1fr)_minmax(0,3fr)]">
@@ -125,7 +131,11 @@ export default function HorstSchnellPage() {
                             {track.title}
                           </Link>
                         </div>
-                        <AudioPlayer src={track.audioSrc} />
+                        <AudioPlayer
+                          src={track.audioSrc}
+                          autoPlay={autoPlayNext && index === 8}
+                          onEnded={isLastVisible ? () => { setShowAll(true); setAutoPlayNext(true); } : undefined}
+                        />
                       </div>
                     </div>
 
@@ -152,7 +162,7 @@ export default function HorstSchnellPage() {
                       </div>
                     </div>
                   </article>
-                  {index < 7 && (
+                  {index < tracksToShow.length - 1 && (
                     <div className="flex justify-center">
                       <div className="h-6 w-0.5 bg-gradient-to-b from-amber-900/40 to-transparent" />
                     </div>
@@ -162,14 +172,14 @@ export default function HorstSchnellPage() {
             })}
           </div>
 
-          {albumTracks.length > 8 && (
+          {!showAll && albumTracks.length > 8 && (
             <div className="flex justify-center pt-4">
-              <Link
-                href={`/${locale}/horst-schnell/music`}
+              <button
+                onClick={() => setShowAll(true)}
                 className="rounded-full border border-amber-700/50 px-6 py-2 text-sm text-amber-400 hover:bg-amber-900/20"
               >
                 {t("trackJourney.viewFullTrackList")} ({albumTracks.length - 8} more)
-              </Link>
+              </button>
             </div>
           )}
         </div>
