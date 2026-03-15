@@ -1,56 +1,43 @@
-// app/[locale]/music/page.tsx
-"use client";
+import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
+import MusicPage from "./MusicPageClient";
 
-import { albums, tracks } from "@/data/siteData";
-import Image from "next/image";
-import { useLocale, useTranslations } from 'next-intl';
-import { AlbumCard } from "@/components/music/AlbumCard";
-import { DynamicThemeWrapper } from "@/components/theme/DynamicThemeWrapper";
-import { getLocalizedString } from "@/lib/i18n-helpers";
+type Props = {
+  params: Promise<{ locale: string }>;
+};
 
-export default function MusicPage() {
-  const locale = useLocale();
-  const t = useTranslations('music');
-  const singles = tracks.filter((t) => t.albumId === "single");
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
 
-  return (
-    <div className="mx-auto max-w-6xl px-4 py-10 md:px-6 md:py-16">
-      <h1 className="text-2xl font-semibold mb-6">{t('title')}</h1>
+  const title =
+    locale === "de"
+      ? "Musik – Just One More Day | Mylon Grey"
+      : "Music – Just One More Day | Mylon Grey";
 
-      <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
-        {albums.map((album) => (
-          <AlbumCard key={album.id} album={album} />
-        ))}
-      </div>
+  const description =
+    locale === "de"
+      ? "Alle Lieder vom Gedenkalbum Just One More Day von Mylon Grey."
+      : "All tracks from the memorial album Just One More Day by Mylon Grey.";
 
-      {singles.length > 0 && (
-        <section className="mt-12">
-          <h2 className="mb-4 text-xl font-semibold">{t('singles')}</h2>
-          <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
-            {singles.map((s) => (
-              <DynamicThemeWrapper key={s.id} artworkSrc={s.coverImage}>
-                <a
-                  href={`/${locale}/tracks/${s.slug}`}
-                  className="group flex flex-col overflow-hidden rounded-2xl border border-white/5 bg-black/40 shadow-lg"
-                >
-                  <div className="relative aspect-square w-full overflow-hidden">
-                    <Image
-                      src={s.coverImage}
-                      alt={s.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      sizes="(min-width: 768px) 250px, 100vw"
-                    />
-                  </div>
-                  <div className="flex flex-1 flex-col gap-1 p-4">
-                    <h3 className="text-base font-semibold">{s.title}</h3>
-                  </div>
-                </a>
-              </DynamicThemeWrapper>
-            ))}
-          </div>
-        </section>
-      )}
-    </div>
-  );
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      images: [{ url: "https://mylon-grey.com/covers/Just_one_more_day.jpg" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["https://mylon-grey.com/covers/Just_one_more_day.jpg"],
+    },
+  };
+}
+
+export default async function Page({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  return <MusicPage />;
 }

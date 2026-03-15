@@ -19,35 +19,46 @@ const lora = Lora({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: "Mylon Grey – Official Website – Memorial Album 'Just One More Day'",
-  description: "Official website of Mylon Grey – cinematic songs for fragile moments. Listen to the memorial album 'Just One More Day' dedicated to Maylo. All Bandcamp proceeds support animal welfare organizations that rescue dogs in need.",
-  metadataBase: new URL("https://mylon-grey.com"),
-  openGraph: {
-    type: "website",
-    title: "Mylon Grey – Official Website – Memorial Album 'Just One More Day'",
-    description:
-      "Official website of Mylon Grey – cinematic songs for fragile moments. Listen to the memorial album 'Just One More Day' dedicated to Maylo. All Bandcamp proceeds support animal welfare organizations that rescue dogs in need.",
-    url: "https://mylon-grey.com",
-    siteName: "Mylon Grey",
-    images: [
-      {
-        url: "https://mylon-grey.com/covers/Just_one_more_day.jpg",
-        width: 1200,
-        height: 1200,
-        alt: "Just One More Day - Mylon Grey Album Cover",
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  return {
+    metadataBase: new URL("https://mylon-grey.com"),
+    title: {
+      template: "%s | mylon-grey.com",
+      default: "mylon-grey.com",
+    },
+    openGraph: {
+      type: "website",
+      url: "https://mylon-grey.com",
+      siteName: "Mylon Grey",
+      images: [
+        {
+          url: "https://mylon-grey.com/covers/Just_one_more_day.jpg",
+          width: 1200,
+          height: 1200,
+          alt: "Just One More Day - Mylon Grey Album Cover",
+        },
+      ],
+      locale: locale === "de" ? "de_DE" : "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      images: ["https://mylon-grey.com/covers/Just_one_more_day.jpg"],
+    },
+    alternates: {
+      languages: {
+        en: "https://mylon-grey.com/en",
+        de: "https://mylon-grey.com/de",
+        "x-default": "https://mylon-grey.com/en",
       },
-    ],
-    locale: "en_US",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Mylon Grey – Official Website – Memorial Album 'Just One More Day'",
-    description:
-      "Official website of Mylon Grey – cinematic songs for fragile moments. Listen to the memorial album 'Just One More Day' dedicated to Maylo. All Bandcamp proceeds support animal welfare organizations that rescue dogs in need.",
-    images: ["https://mylon-grey.com/covers/Just_one_more_day.jpg"],
-  },
-};
+    },
+  };
+}
 
 export function generateStaticParams() {
   return locales.map((locale) => ({locale}));

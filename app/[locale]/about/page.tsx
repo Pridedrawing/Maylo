@@ -1,4 +1,4 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { aboutContent, siteLinks } from "@/data/siteData";
 import { StreamingLinks } from "@/components/common/StreamingLinks";
 import type { Metadata } from "next";
@@ -10,10 +10,29 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "about" });
+
+  const title =
+    locale === "de"
+      ? "Über & Impressum | Mylon Grey"
+      : "About & Imprint | Mylon Grey";
+
+  const description =
+    locale === "de"
+      ? "Über Mylon Grey — die Geschichte hinter Just One More Day, Impressum und Datenschutz."
+      : "About Mylon Grey — the story behind Just One More Day, imprint, and privacy policy.";
 
   return {
-    title: t("title"),
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
