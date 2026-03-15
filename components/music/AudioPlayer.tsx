@@ -6,6 +6,9 @@ import { useEffect, useRef, useState } from "react";
 // Only one audio element should play at a time.
 let activeAudio: HTMLAudioElement | null = null;
 
+// Ordered registry of all mounted players — used for auto-advance.
+const audioRegistry: HTMLAudioElement[] = [];
+
 interface AudioPlayerProps {
   src: string;
 }
@@ -20,12 +23,13 @@ export function AudioPlayer({ src }: AudioPlayerProps) {
     const audio = audioRef.current;
     if (!audio) return;
 
+    audioRegistry.push(audio);
+
     const syncState = () => {
       setIsPlaying(!audio.paused && !audio.ended);
     };
 
     const handlePlay = () => {
-      // Pause any other playing audio
       if (activeAudio && activeAudio !== audio) {
         activeAudio.pause();
       }
@@ -34,9 +38,7 @@ export function AudioPlayer({ src }: AudioPlayerProps) {
     };
 
     const handlePause = () => {
-      // Always sync local state on pause, even if another player caused it
       syncState();
-
       if (activeAudio === audio && audio.paused) {
         activeAudio = null;
       }
@@ -46,6 +48,11 @@ export function AudioPlayer({ src }: AudioPlayerProps) {
       syncState();
       if (activeAudio === audio) {
         activeAudio = null;
+      }
+      // Auto-advance: play the next registered track, unless this is the last
+      const idx = audioRegistry.indexOf(audio);
+      if (idx !== -1 && idx < audioRegistry.length - 1) {
+        audioRegistry[idx + 1].play();
       }
     };
 
@@ -64,9 +71,9 @@ export function AudioPlayer({ src }: AudioPlayerProps) {
       audio.removeEventListener("ended", handleEnded);
       audio.removeEventListener("timeupdate", handleTimeUpdate);
       audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
-      if (activeAudio === audio) {
-        activeAudio = null;
-      }
+      const i = audioRegistry.indexOf(audio);
+      if (i !== -1) audioRegistry.splice(i, 1);
+      if (activeAudio === audio) activeAudio = null;
     };
   }, []);
 
