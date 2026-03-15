@@ -197,69 +197,41 @@ export default function MayloPage() {
         </article>
 
         {/* Track thumbnail navigator */}
-        <div className="space-y-4">
-          <aside className="space-y-4 rounded-3xl border border-white/5 bg-black/40 p-4">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-300">
-              {t('allSongs.title')}
-            </h3>
-            <p className="text-xs text-neutral-400">
-              {t('allSongs.description')}
-            </p>
-            <div className="mt-3 grid grid-cols-3 gap-3">
-              {allTracks.map((track) => (
-                <Link
-                  key={track.id}
-                  href={`/${locale}/tracks/${track.slug}`}
-                  className="group relative aspect-square overflow-hidden rounded-xl border border-white/10"
-                >
-                  <Image
-                    src={track.coverImage}
-                    alt={track.title}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    sizes="120px"
-                  />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                  <span className="pointer-events-none absolute inset-x-2 bottom-2 line-clamp-2 text-[10px] font-medium text-neutral-50 drop-shadow">
-                    {track.title}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </aside>
-
-          <aside className="space-y-4 rounded-3xl border border-amber-900/20 bg-black/40 p-4">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-amber-600">
-              Lieder eines Lebens
-            </h3>
-            <p className="text-xs text-amber-800">Dr. Horst Schnell</p>
-            <div className="mt-3 grid grid-cols-3 gap-3">
-              {horstSchnellTracks.map((track) => (
-                <Link
-                  key={track.id}
-                  href={`/${locale}/horst-schnell/tracks/${track.slug}`}
-                  className="group relative aspect-square overflow-hidden rounded-xl border border-amber-900/20"
-                >
-                  <Image
-                    src={track.coverImage}
-                    alt={track.title}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    sizes="120px"
-                  />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                  <span className="pointer-events-none absolute inset-x-2 bottom-2 line-clamp-2 text-[10px] font-medium text-neutral-50 drop-shadow">
-                    {track.title}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </aside>
-        </div>
+        <aside className="space-y-4 rounded-3xl border border-white/5 bg-black/40 p-4">
+          <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-300">
+            {t('allSongs.title')}
+          </h3>
+          <p className="text-xs text-neutral-400">
+            {t('allSongs.description')}
+          </p>
+          <div className="mt-3 grid grid-cols-3 gap-3">
+            {allTracks.map((track) => (
+              <Link
+                key={track.id}
+                href={`/${locale}/tracks/${track.slug}`}
+                className="group relative aspect-square overflow-hidden rounded-xl border border-white/10"
+              >
+                <Image
+                  src={track.coverImage}
+                  alt={track.title}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="120px"
+                />
+                <div className="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <span className="pointer-events-none absolute inset-x-2 bottom-2 line-clamp-2 text-[10px] font-medium text-neutral-50 drop-shadow">
+                  {track.title}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </aside>
       </section>
 
       {/* TRACK JOURNEY SECTION */}
       <section className="border-t border-white/5 mx-auto max-w-6xl px-4 py-16 md:px-6">
+        <div className="grid gap-10 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
+        <div>
         <div className="mb-8 flex items-baseline justify-between gap-4">
           <h2 className="text-xl font-semibold tracking-tight">
             {t('trackJourney.title')}
@@ -330,6 +302,39 @@ export default function MayloPage() {
             </div>
           );
           })}
+        </div>
+        </div>
+
+        {/* Lieder eines Lebens sidebar */}
+        <aside className="space-y-4 rounded-3xl border border-amber-900/20 bg-black/40 p-4 self-start sticky top-4">
+          <Link href={`/${locale}/horst-schnell`} className="block">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-amber-600 hover:text-amber-400">
+              Lieder eines Lebens
+            </h3>
+          </Link>
+          <p className="text-xs text-amber-800">Dr. Horst Schnell</p>
+          <div className="mt-3 grid grid-cols-3 gap-3">
+            {horstSchnellTracks.map((track) => (
+              <Link
+                key={track.id}
+                href={`/${locale}/horst-schnell/tracks/${track.slug}`}
+                className="group relative aspect-square overflow-hidden rounded-xl border border-amber-900/20"
+              >
+                <Image
+                  src={track.coverImage}
+                  alt={track.title}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="120px"
+                />
+                <div className="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <span className="pointer-events-none absolute inset-x-2 bottom-2 line-clamp-2 text-[10px] font-medium text-neutral-50 drop-shadow">
+                  {track.title}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </aside>
         </div>
       </section>
       </div>
