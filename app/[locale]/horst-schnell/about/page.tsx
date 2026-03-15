@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import LegalSections from "@/components/legal/LegalSections";
 
 const BG = "#1C1209";
 
@@ -40,6 +41,11 @@ export default function HorstSchnellAboutPage() {
             {t("albumDescription")}
           </p>
         </article>
+
+        {/* Shared imprint + privacy */}
+        <div className="mt-16 space-y-10">
+          <LegalSections />
+        </div>
       </div>
     </div>
   );
