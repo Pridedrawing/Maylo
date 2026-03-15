@@ -33,13 +33,24 @@ export default function HorstSchnellAboutPage() {
           </div>
         </div>
 
-        {/* About the album */}
-        <article className="rounded-2xl border border-amber-900/20 bg-amber-950/10 p-6 md:p-8">
-          <h2 className="mb-4 text-xl font-semibold text-amber-50">{t("albumTitle")}</h2>
-          <p className="text-sm leading-relaxed text-amber-200/70 font-lora">
-            {t("albumDescription")}
-          </p>
-        </article>
+        {/* About the album + video */}
+        <div className="grid gap-6 md:grid-cols-2 md:items-start">
+          <article className="rounded-2xl border border-amber-900/20 bg-amber-950/10 p-6 md:p-8">
+            <h2 className="mb-4 text-xl font-semibold text-amber-50">{t("albumTitle")}</h2>
+            <p className="text-sm leading-relaxed text-amber-200/70 font-lora">
+              {t("albumDescription")}
+            </p>
+          </article>
+
+          <div className="overflow-hidden rounded-2xl border border-amber-900/30">
+            <video
+              src="/video/fuer-meine-enkelkinder.mp4"
+              controls
+              playsInline
+              className="w-full"
+            />
+          </div>
+        </div>
 
 
       </div>
