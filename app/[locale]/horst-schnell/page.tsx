@@ -207,9 +207,11 @@ export default function HorstSchnellPage() {
           </aside>
 
           <aside className="space-y-4 rounded-3xl border border-white/10 bg-black/40 p-4">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-400">
-              Just One More Day
-            </h3>
+            <Link href={`/${locale}/maylo`} className="block">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-400 hover:text-neutral-200">
+                Just One More Day
+              </h3>
+            </Link>
             <p className="text-xs text-neutral-600">Mylon Grey</p>
             <div className="mt-3 grid grid-cols-3 gap-3">
               {mayloTracks.map((track) => (
