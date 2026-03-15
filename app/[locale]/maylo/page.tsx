@@ -306,7 +306,7 @@ export default function MayloPage() {
         </div>
 
         {/* Lieder eines Lebens sidebar */}
-        <aside className="space-y-4 rounded-3xl border border-amber-900/20 bg-black/40 p-4 self-start sticky top-4">
+        <aside className="space-y-4 rounded-3xl border border-amber-900/20 bg-black/40 p-4">
           <Link href={`/${locale}/horst-schnell`} className="block">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-amber-600 hover:text-amber-400">
               Lieder eines Lebens
