@@ -85,13 +85,23 @@ export default function HorstSchnellPage() {
 
       {/* ABOUT SECTION */}
       <section className="mx-auto max-w-6xl px-4 py-16 md:px-6">
-        <div className="rounded-3xl border border-amber-900/30 bg-amber-950/20 p-8 md:p-12">
-          <h2 className="mb-4 text-2xl font-semibold tracking-tight text-amber-50">
-            {t("about.title")}
-          </h2>
-          <p className="text-sm leading-relaxed text-amber-100/80">
-            {t("about.description")}
-          </p>
+        <div className="grid gap-6 md:grid-cols-2 md:items-start rounded-3xl border border-amber-900/30 bg-amber-950/20 p-8 md:p-12">
+          <div>
+            <h2 className="mb-4 text-2xl font-semibold tracking-tight text-amber-50">
+              {t("about.title")}
+            </h2>
+            <p className="text-sm leading-relaxed text-amber-100/80">
+              {t("about.description")}
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-xl border border-amber-900/30">
+            <video
+              src="/video/fuer-meine-enkelkinder.mp4"
+              controls
+              playsInline
+              className="w-full"
+            />
+          </div>
         </div>
       </section>
 
