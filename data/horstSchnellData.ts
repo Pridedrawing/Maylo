@@ -21,6 +21,7 @@ export const horstSchnellAlbums: Album[] = [
       "ein-haus-aus-eichen","ein-neues-herz","angela","ein-tropfen-fuer-die-welt",
       "bis-ewigkeit-vergeht","annemie","hoert-zu-wenn-ich-geh","wenns-schiefgeht",
       "claudia-das-stille-herz","dein-feuer-ist-mein-feuer","wenn-ich-nicht-mehr-sprech",
+      "was-ich-nicht-wiegen-kann",
     ],
   },
 ];
@@ -1067,5 +1068,87 @@ bin ich noch da — und hör euch zu.
 
 Er hört uns zu! Er bleibt, er geht!
 Was denkt — vergeht nicht, was besteht!`,
+  },
+  {
+    id: "was-ich-nicht-wiegen-kann",
+    slug: "was-ich-nicht-wiegen-kann",
+    title: "Was ich nicht wiegen kann",
+    albumId: "lieder-eines-lebens",
+    trackNumber: 22,
+    audioSrc: "/audio/vater/21-was-ich-nicht-wiegen-kann.mp3",
+    coverImage: "/covers/vater/21-was-ich-nicht-wiegen-kann.png",
+    releaseDate: "2026-10-31",
+    description: {
+      en: "An art song for baritone and string quartet, written for his 91st birthday — ice, water and vapour as the stages of a life, and an inventor's quiet conclusion that nothing is lost, not even the soul.",
+      de: "Ein Kunstlied für Bariton und Streichquartett zum 91. Geburtstag — Eis, Wasser und Dampf als Stationen eines Lebens und die stille Folgerung eines Erfinders, dass nichts verloren geht, auch keine Seele.",
+    } as any,
+    lyrics: `[Strophe 1]
+Als Kind war ich aus Eis.
+Die Stadt in Flammen, ich blieb stehn.
+Die Angst hielt mich so fest und leis,
+ich konnte nur noch sehn.
+Ich hab nicht geweint, ich hab gezählt,
+die Einschläge, Schlag für Schlag.
+So wird ein Kind, das keiner hält,
+so hart wie Eis am Wintertag.
+
+[Strophe 2]
+Dann lachte jemand durch den Saal,
+und etwas in mir taute auf.
+Ich wurde Wasser, wurde Fluss
+und nahm die Welt in meinen Lauf.
+Ich trug ein Haus, ich trug ein Werk,
+ich trug die Kinder durch die Zeit.
+Und lernte: Wasser bricht man nicht,
+es weicht nur aus und kommt doch weit.
+
+[Strophe 3]
+Jetzt bin ich alt und werde leicht,
+der Spiegel zeigt mich nicht mehr klar.
+Ich frag wie damals, als ein Kind:
+Wohin geht das, was eben war?
+
+[Refrain]
+Erst fest, dann Wasser, dann so leicht,
+dass es kein Auge mehr erreicht.
+Wohin es geht, hat keiner mir gesagt.
+Ich hab mein Leben lang gefragt.
+
+[Strophe 4]
+Sie nannten mich einmal Erfinder,
+mein Name steht auf dem Papier.
+Doch alles, was ich je entdeckte,
+lag lange da schon, vor mir hier.
+Ich hab's gefunden, nicht erfunden.
+Das ist das Ehrlichste an mir.
+
+[Strophe 5]
+Und wenn kein Tropfen je verschwindet,
+kein bisschen Wärme, nicht ein Licht,
+warum soll eine Seele enden?
+Das glaub ich nicht. Das glaub ich nicht.
+
+[Refrain]
+Erst fest, dann Wasser, dann so leicht,
+dass es kein Auge mehr erreicht.
+Und doch ist nichts davon vergangen.
+Es hat nur anders angefangen.
+
+[Bridge]
+Mein Kind, ich hielt dich in den Armen,
+du wurdest leicht, ich blieb so schwer.
+Und du, mit der ich alles teilte,
+gingst hinterher, das Haus war leer.
+Ich hab gerechnet, Nacht für Nacht,
+und keine Rechnung ging mir auf,
+bis ich verstand, was Wasser macht:
+Es fällt nicht weg. Es steigt hinauf.
+
+[Finale]
+Erst fest, dann Wasser, dann so leicht,
+dass es kein Auge mehr erreicht.
+Am Ende des Lichts seh ich sie wieder.
+Und fällt ein Regen auf euch nieder,
+dann denkt an mich. Ich bin nicht weit.`,
   },
 ];
