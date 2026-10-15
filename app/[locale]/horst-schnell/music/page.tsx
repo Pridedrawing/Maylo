@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const description =
     locale === "de"
-      ? "Alle 20 Lieder von Lieder eines Lebens — ein musikalisches Portrait über 90 Jahre."
-      : "All 20 tracks from Lieder eines Lebens — a musical portrait of 90 years.";
+      ? "Alle 22 Lieder von Lieder eines Lebens — ein musikalisches Portrait über 90 Jahre."
+      : "All 22 tracks from Lieder eines Lebens — a musical portrait of 90 years.";
 
   return {
     title,

@@ -9,8 +9,8 @@ export const horstSchnellAlbums: Album[] = [
     title: "Lieder eines Lebens" as any,
     subtitle: { en: "Songs of a Life", de: "Songs of a Life" } as any,
     description: {
-      en: "20 songs celebrating 90 years of a remarkable life.",
-      de: "20 Lieder, die 90 Jahre eines bemerkenswerten Lebens würdigen.",
+      en: "22 songs celebrating 90 years of a remarkable life.",
+      de: "22 Lieder, die 90 Jahre eines bemerkenswerten Lebens würdigen.",
     } as any,
     releaseDate: "2025-10-01",
     coverImage: "/covers/vater/album-cover.png",

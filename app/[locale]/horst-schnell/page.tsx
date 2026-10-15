@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const description =
     locale === "de"
-      ? "20 Lieder, die 90 Jahre eines bemerkenswerten Lebens würdigen — von den Trümmern Magdeburgs bis zu einem Leben voller Familie, Erfindungen und Weisheit."
-      : "20 songs celebrating 90 years of a remarkable life — from the rubble of post-war Magdeburg to a life full of family, invention, and wisdom.";
+      ? "22 Lieder, die 90 Jahre eines bemerkenswerten Lebens würdigen — von den Trümmern Magdeburgs bis zu einem Leben voller Familie, Erfindungen und Weisheit."
+      : "22 songs celebrating 90 years of a remarkable life — from the rubble of post-war Magdeburg to a life full of family, invention, and wisdom.";
 
   return {
     title,
