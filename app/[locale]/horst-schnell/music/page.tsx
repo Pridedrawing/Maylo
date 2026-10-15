@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ogImageEntry, ogImageForCover } from "@/lib/og-image";
 import { setRequestLocale } from "next-intl/server";
 import HorstSchnellMusicPage from "./HorstSchnellMusicPageClient";
 
@@ -25,13 +26,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      images: [{ url: "https://mylon-grey.com/covers/vater/album-cover.png" }],
+      images: [ogImageEntry("/covers/vater/album-cover.png", "Lieder eines Lebens")],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["https://mylon-grey.com/covers/vater/album-cover.png"],
+      images: [ogImageForCover("/covers/vater/album-cover.png")],
     },
   };
 }
