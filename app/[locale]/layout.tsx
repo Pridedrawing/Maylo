@@ -38,9 +38,9 @@ export async function generateMetadata({
       siteName: "Mylon Grey",
       images: [
         {
-          url: "https://mylon-grey.com/covers/Just_one_more_day.jpg",
+          url: "https://mylon-grey.com/og/Just_one_more_day.jpg",
           width: 1200,
-          height: 1200,
+          height: 630,
           alt: "Just One More Day - Mylon Grey Album Cover",
         },
       ],
@@ -48,7 +48,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      images: ["https://mylon-grey.com/covers/Just_one_more_day.jpg"],
+      images: ["https://mylon-grey.com/og/Just_one_more_day.jpg"],
     },
     alternates: {
       languages: {

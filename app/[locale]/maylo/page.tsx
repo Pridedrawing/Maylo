@@ -25,13 +25,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      images: [{ url: "https://mylon-grey.com/covers/Just_one_more_day.jpg" }],
+      images: [{ url: "https://mylon-grey.com/og/Just_one_more_day.jpg", width: 1200, height: 630, alt: "Just One More Day - Mylon Grey Album Cover" }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["https://mylon-grey.com/covers/Just_one_more_day.jpg"],
+      images: ["https://mylon-grey.com/og/Just_one_more_day.jpg"],
     },
   };
 }

@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     siteName: "Mylon Grey",
     images: [
       {
-        url: "https://mylon-grey.com/covers/Just_one_more_day.jpg",
+        url: "https://mylon-grey.com/og/Just_one_more_day.jpg",
         width: 1200,
-        height: 1200,
+        height: 630,
         alt: "Just One More Day - Mylon Grey Album Cover",
       },
     ],
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Mylon Grey – Official Website – Memorial Album 'Just One More Day'",
     description:
       "Official website of Mylon Grey – cinematic songs for fragile moments. Listen to the memorial album 'Just One More Day' dedicated to Maylo. All Bandcamp proceeds support animal welfare organizations that rescue dogs in need.",
-    images: ["https://mylon-grey.com/covers/Just_one_more_day.jpg"],
+    images: ["https://mylon-grey.com/og/Just_one_more_day.jpg"],
   },
 };
 

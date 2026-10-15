@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { tracks } from "@/data/siteData";
 import { getLocalizedString } from "@/lib/i18n-helpers";
+import { ogImageEntry } from "@/lib/og-image";
 import TrackPage from "./TrackPageClient";
 
 type Props = {
@@ -26,8 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     rawDescription ||
     "A track from the memorial album Just One More Day by Mylon Grey.";
 
-  const ogImage =
-    "https://mylon-grey.com/" + track.coverImage.replace(/^\//, "");
+  const ogImage = ogImageEntry(track.coverImage, track.title);
 
   return {
     title,
@@ -35,13 +35,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      images: [{ url: ogImage }],
+      images: [ogImage],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [ogImage],
+      images: [ogImage.url],
     },
   };
 }
